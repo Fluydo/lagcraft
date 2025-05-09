@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Player, Team } from "@shared/schema";
 import { Card } from "@/components/ui/card";
 import { useWebSocket } from "@/hooks/useWebSocket";
+import { queryClient } from "@/lib/queryClient";
 
 export function TeamSection() {
   const { data: teams = [] } = useQuery<Team[]>({
@@ -38,10 +39,10 @@ export function TeamSection() {
   });
 
   return (
-    <section id="teams" className="bg-card rounded-lg p-5 border border-[hsl(var(--accent-blue))]/20">
+    <section id="teams" className="bg-card rounded-lg p-5 border border-[hsl(var(--accent-purple))]/20">
       <div className="flex justify-between items-center mb-4">
         <h2 className="font-heading font-bold text-2xl flex items-center">
-          <i className="ri-team-line mr-2 text-[hsl(var(--accent-blue))]"></i> Equipes
+          <i className="ri-team-line mr-2 text-[hsl(var(--accent-purple))]"></i> Equipes
         </h2>
         <span className="text-sm text-gray-400 font-tech">{teams.length} equipes ativas</span>
       </div>
@@ -57,7 +58,7 @@ export function TeamSection() {
             const teamPlayers = playersByTeam[team.id] || [];
             
             return (
-              <Card key={team.id} className="bg-muted rounded border border-[hsl(var(--accent-blue))]/20 p-4">
+              <Card key={team.id} className="bg-muted rounded border border-[hsl(var(--accent-purple))]/20 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <h3 
                     className="font-tech font-semibold text-xl" 

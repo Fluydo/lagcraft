@@ -3,58 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: 220 40% 12%;
+  --background: 266 40% 12%;
   --foreground: 0 0% 98%;
-  --muted: 240 3.7% 15.9%;
-  --muted-foreground: 240 5% 64.9%;
-  --popover: 224 71% 4%;
+  --muted: 266 3.7% 15.9%;
+  --muted-foreground: 266 5% 64.9%;
+  --popover: 266 71% 4%;
   --popover-foreground: 0 0% 98%;
-  --card: 222 47% 11%;
+  --card: 266 47% 11%;
   --card-foreground: 0 0% 98%;
-  --border: 215 31% 20%;
-  --input: 240 3.7% 15.9%;
-  --primary: 207 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 266 32% 18%;
+  --border: 266 31% 20%;
+  --input: 266 3.7% 15.9%;
+  --primary: 266 90% 60%;
+  --primary-foreground: 266 100% 99%;
+  --secondary: 280 32% 18%;
   --secondary-foreground: 0 0% 98%;
-  --accent: 266 100% 64%;
+  --accent: 280 100% 64%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --ring: 240 4.9% 83.9%;
+  --ring: 266 4.9% 83.9%;
   --radius: 0.5rem;
   
-  --accent-green: 114 100% 54%;
-  --accent-blue: 181 92% 61%;
+  --accent-purple-light: 280 100% 70%;
   --accent-purple: 266 80% 57%;
+  --accent-purple-dark: 260 80% 45%;
   
-  --chart-1: var(--accent-green);
-  --chart-2: var(--accent-blue);
-  --chart-3: var(--accent-purple);
+  --chart-1: var(--accent-purple-light);
+  --chart-2: var(--accent-purple);
+  --chart-3: var(--accent-purple-dark);
   --chart-4: 51 100% 50%;
   --chart-5: 0 83% 62%;
 }
 
 .dark {
-  --background: 220 40% 12%;
+  --background: 266 40% 12%;
   --foreground: 0 0% 98%;
-  --muted: 240 3.7% 15.9%;
-  --muted-foreground: 240 5% 64.9%;
-  --popover: 224 71% 4%;
+  --muted: 266 3.7% 15.9%;
+  --muted-foreground: 266 5% 64.9%;
+  --popover: 266 71% 4%;
   --popover-foreground: 0 0% 98%;
-  --card: 222 47% 11%;
+  --card: 266 47% 11%;
   --card-foreground: 0 0% 98%;
-  --border: 215 31% 20%;
-  --input: 240 3.7% 15.9%;
-  --primary: 207 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 266 32% 18%;
+  --border: 266 31% 20%;
+  --input: 266 3.7% 15.9%;
+  --primary: 266 90% 60%;
+  --primary-foreground: 266 100% 99%;
+  --secondary: 280 32% 18%;
   --secondary-foreground: 0 0% 98%;
-  --accent: 266 100% 64%;
+  --accent: 280 100% 64%;
   --accent-foreground: 0 0% 98%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
-  --ring: 240 4.9% 83.9%;
+  --ring: 266 4.9% 83.9%;
 }
 
 @layer base {
@@ -69,34 +69,34 @@
 
 @layer components {
   .text-shadow {
-    text-shadow: 0 0 10px rgba(77, 238, 234, 0.6);
+    text-shadow: 0 0 10px rgba(175, 82, 222, 0.6);
   }
   
   .glow {
-    box-shadow: 0 0 15px rgba(77, 238, 234, 0.3);
+    box-shadow: 0 0 15px rgba(175, 82, 222, 0.3);
   }
 
   .minecraft-block-pattern {
-    background-image: linear-gradient(rgba(18, 26, 43, 0.97), rgba(18, 26, 43, 0.97)),
+    background-image: linear-gradient(rgba(27, 14, 45, 0.97), rgba(27, 14, 45, 0.97)),
       url('https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?ixlib=rb-4.0.3&auto=format&fit=crop');
     background-size: 100px 100px;
   }
   
   .grid-pattern {
     background-size: 20px 20px;
-    background-image: linear-gradient(to right, rgba(77, 238, 234, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(77, 238, 234, 0.05) 1px, transparent 1px);
+    background-image: linear-gradient(to right, rgba(175, 82, 222, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(175, 82, 222, 0.05) 1px, transparent 1px);
   }
   
   @keyframes pulse-border {
     0% {
-      box-shadow: 0 0 0 0 rgba(57, 255, 20, 0.4);
+      box-shadow: 0 0 0 0 rgba(175, 82, 222, 0.4);
     }
     70% {
-      box-shadow: 0 0 0 5px rgba(57, 255, 20, 0);
+      box-shadow: 0 0 0 5px rgba(175, 82, 222, 0);
     }
     100% {
-      box-shadow: 0 0 0 0 rgba(57, 255, 20, 0);
+      box-shadow: 0 0 0 0 rgba(175, 82, 222, 0);
     }
   }
   
@@ -109,11 +109,11 @@
   }
   
   .scrollbar-thin::-webkit-scrollbar-track {
-    background: rgba(30, 30, 36, 0.5);
+    background: rgba(27, 14, 45, 0.5);
   }
   
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background: rgba(77, 238, 234, 0.5);
+    background: rgba(175, 82, 222, 0.5);
     border-radius: 2px;
   }
   
