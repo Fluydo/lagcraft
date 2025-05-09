@@ -1,0 +1,119 @@
+Crie um website futurista, moderno e limpo para o servidor de Minecraft LagCraft, com IP fixo: lag-craft.aternos.me. O estilo visual deve ser inspirado no universo do Minecraft, com elementos quadrados e UI clean, sem utilizar fontes ou ícones típicos de Minecraft, e com uma interface totalmente responsiva. A navegação deve ser suave e a experiência do usuário fluida.
+
+📄 Página Inicial – Estrutura:
+Cabeçalho:
+
+Mostrar claramente o IP do servidor: lag-craft.aternos.me.
+
+Equipes (Teams):
+
+Listar todas as equipes ativas, com base nas informações recebidas de um backend via requisições feitas pelo plugin Skript.
+
+Cada equipe representa um prefixo de LuckPerms.
+
+Exibir:
+
+Nome da equipe (prefixo).
+
+Jogadores pertencentes à equipe (nomes dos jogadores, não números).
+
+Alianças Ativas:
+
+Exibir as alianças entre equipes.
+
+Cada aliança deve ser representada visualmente com:
+
+Um retângulo com corner radius suave.
+
+Nome da equipe 1 à esquerda e da equipe 2 à direita.
+
+Um ícone de escudo no centro indicando a aliança.
+
+As cores da equipe devem destacar-se do fundo, com separação visual clara dentro do retângulo.
+
+Live Server Feed (Live Updates):
+
+Componente vertical com scroll infinito, exibindo:
+
+Eventos de PvP.
+
+Criação de alianças.
+
+Quebra de alianças.
+
+Cada update deve:
+
+Estar dentro de um retângulo arredondado (corner radius).
+
+Ter cor de destaque separando o conteúdo do fundo.
+
+Exibir os nomes dos jogadores envolvidos, suas equipes (prefixos) e o tipo de evento.
+
+Exemplo de entradas:
+
+"PedroLopes (Equipe: Dragões) entrou em combate com FilipeM (Equipe: Ninjas)"
+
+"Uma aliança foi criada entre 'Rebeldes' e 'Exploradores'"
+
+"A aliança entre 'Lobos' e 'Guardas' foi quebrada"
+
+Jogadores Online:
+
+Exibir a lista em tempo real dos jogadores conectados.
+
+Dados recebidos do backend, enviados pelo plugin Skript.
+
+Mostrar nomes reais dos jogadores, agrupados por equipe.
+
+Chat do Servidor:
+
+Exibir chat público em tempo real, com mensagens dos jogadores no servidor.
+
+Excluir:
+
+Mensagens privadas (ex: /tell, /msg).
+
+Mensagens de administradores (ex: mudanças de gamemode, comandos OP).
+
+Layout do chat deve ser limpo e vertical com scroll infinito automático.
+
+⚙️ Integração com Backend:
+Todas as informações exibidas no site devem ser fornecidas em tempo real por um backend.
+
+Este backend será atualizado por um plugin Skript, que enviará:
+
+Lista de jogadores online com seus nomes e prefixos.
+
+Informações das equipes (nome da equipe e seus membros).
+
+Eventos de PvP (jogador atacando jogador, prefixos envolvidos).
+
+Criações e quebras de alianças entre prefixos.
+
+Chat público (excluindo tells e mensagens de staff).
+
+O site não deve permitir criação ou quebra de alianças diretamente — essa lógica pertence exclusivamente ao servidor (via Skript).
+
+O site apenas exibe informações recebidas.
+
+🎨 Design e UI:
+Interface quadrada e futurística, com cantos levemente arredondados em painéis e cartões.
+
+Use paleta escura com toques de cores vibrantes (como verde, roxo, azul neon) para destaque.
+
+Componentes como blocos, cartões, listas e feed devem ter separações claras e responsivas.
+
+Fonte moderna e legível, sem tema “pixel” ou retrô.
+
+Responsividade total: deve funcionar perfeitamente em celular, tablet e desktop.
+
+✅ Restrições e Considerações:
+Não incluir painel administrativo nem interface para criação/quebra de alianças.
+
+Toda interação com o jogo (respostas de alianças, lógica de PvP, cooldowns) será gerida pelo plugin Skript.
+
+O site apenas exibe o que for enviado via backend pelo servidor.
+
+O site deve ser leve, rápido e permitir carregamento em tempo real sem necessidade de refresh manual.
+
+Esse é o prompt completo e preciso, pronto para ser usado com uma inteligência artificial que desenvolve websites. Deseja que eu gere o código base para esse site em HTML + JS, ou prefere apenas usar o prompt para outro gerador?
